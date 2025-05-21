@@ -4,7 +4,7 @@ from db import app, db
 from models import User, Article
 @app.route('/user/update')
 def hello():
-    user = User.query.get(uuid.UUID("10e54d2eb0a142329e7132ade9236dec"))
+    user = User.query.get("681f55e8-1a6e-47fa-96c2-52272da46927")
     user.password = "2222222"
     db.session.commit()
     return user.login_name
