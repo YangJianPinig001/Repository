@@ -1,5 +1,4 @@
 # 忽略 PyCharm 配置文件夹
 .idea/
 # 忽略 Python 虚拟环境文件夹
-**/myenv/
 .venv/
