@@ -2,6 +2,8 @@ import uuid
 
 from db import app, db
 from models import User, Article
+
+
 @app.route('/user/update')
 def hello():
     user = User.query.get("681f55e8-1a6e-47fa-96c2-52272da46927")
