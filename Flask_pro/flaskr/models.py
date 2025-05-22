@@ -1,7 +1,6 @@
 import uuid
-from sqlalchemy.dialects.postgresql import UUID
+from .exts import db
 
-from db import db
 
 
 class User(db.Model):
@@ -9,8 +8,9 @@ class User(db.Model):
     # id为uuid类型，主键
     id = db.Column(db.String(36), primary_key=True, default=lambda: str(uuid.uuid4()), unique=True, nullable=False)
     login_name = db.Column(db.String(20), unique=True, nullable=True)
-    name = db.Column(db.String(20), unique=True, nullable=False)
+    name = db.Column(db.String(20), unique=False, nullable=False)
     password = db.Column(db.String(20), nullable=True)
+    email = db.Column(db.String(100), unique=True, nullable=True)
     unit_code = db.Column(db.String(20), nullable=False)
     unit_name = db.Column(db.String(20), nullable=False)
     deleted = db.Column(db.Boolean, default=False)
@@ -43,3 +43,4 @@ class Article(db.Model):
     update_time = db.Column(db.DateTime, nullable=True)
     create_by = db.Column(db.String(36), nullable=True)
     create_time = db.Column(db.DateTime, nullable=True)
+

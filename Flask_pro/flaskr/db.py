@@ -1,35 +1,10 @@
-from flask import Flask
 
-from flask_sqlalchemy import SQLAlchemy
+# migrate
+# ORM映射插件的使用
+# 1. flask db init # 初始化迁移环境
+# 2. flask db migrate # 生成迁移脚本
+# 3. flask db upgrade # 执行迁移脚本
 
-app = Flask(__name__)
-
-HOSTNAME = "localhost"
-PORT = 3306
-USERNAME = "root"
-PASSWORD = "root"
-DATABASE = "my_test"
-# 连接数据库
-# app.config['SQLALCHEMY_DATABASE_URI'] = \
-#     f'mysql+pymysql://{USERNAME}:{PASSWORD}@{HOSTNAME}:{PORT}/{DATABASE}?charset=utf8mb4'
-
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data.db'
-
-db = SQLAlchemy(app)
-# DATABASE = '/path/to/database.db'
-
-# def get_db():
-#     db = getattr(g, '_database', None)
-#     if db is None:
-#         db = g._database = sqlite3.connect(DATABASE)
-#     return db
-#
-#
-# @app.teardown_appcontext
-# def close_connection(exception):
-#     db = getattr(g, '_database', None)
-#     if db is not None:
-#         db.close()
 
 
 # with app.app_context():
