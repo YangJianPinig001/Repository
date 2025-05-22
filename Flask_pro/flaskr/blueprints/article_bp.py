@@ -5,10 +5,9 @@ from ..exts import db
 
 bp = Blueprint('article', __name__, url_prefix='/article')
 
-@bp.route('/article/add')
+@bp.route('/add')
 def article_add():
-
-    user = User.query.get("681f55e8-1a6e-47fa-96c2-52272da46927")
+    user = User.query.first()
     if not user:
         print("查询结果", user)
         return "User not found. Cannot add articles.", 404

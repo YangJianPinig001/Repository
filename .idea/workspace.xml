@@ -4,26 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b504284-5fa7-4ba7-b6fb-6c79915e975d" name="Changes" comment="变更依赖">
-      <change afterPath="$PROJECT_DIR$/Flask_pro/flaskr/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Flask_pro/flaskr/blueprints/article_bp.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Flask_pro/flaskr/blueprints/auth.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Flask_pro/flaskr/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Flask_pro/flaskr/exts.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Flask_pro/flaskr/migrations/README" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Flask_pro/flaskr/migrations/alembic.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Flask_pro/flaskr/migrations/env.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Flask_pro/flaskr/migrations/script.py.mako" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Flask_pro/flaskr/migrations/versions/117e4d1da8b2_.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Flask_pro/flaskr/migrations/versions/4c66b757c121_.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Flask_pro/flaskr/migrations/versions/cd804a24c20a_.py" afterDir="false" />
+    <list default="true" id="0b504284-5fa7-4ba7-b6fb-6c79915e975d" name="Changes" comment="提交">
+      <change afterPath="$PROJECT_DIR$/Flask_pro/flaskr/blueprints/mail_bp.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Flask_pro/test.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flask_pro/flaskr/db.py" beforeDir="false" afterPath="$PROJECT_DIR$/Flask_pro/flaskr/db.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flask_pro/flaskr/instance/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/Flask_pro/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flask_pro/flaskr/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/Flask_pro/flaskr/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flask_pro/flaskr/blueprints/article_bp.py" beforeDir="false" afterPath="$PROJECT_DIR$/Flask_pro/flaskr/blueprints/article_bp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flask_pro/flaskr/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/Flask_pro/flaskr/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Flask_pro/flaskr/instance/data.db" beforeDir="false" afterPath="$PROJECT_DIR$/Flask_pro/flaskr/instance/data.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flask_pro/flaskr/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Flask_pro/flaskr/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flask_pro/flaskr/start.py" beforeDir="false" afterPath="$PROJECT_DIR$/Flask_pro/flaskr/blueprints/user_bp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +56,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\HuaweiMoveData\Users\YangJianPing\Desktop\Repository\Flask_pro" />
+      <recent name="D:\HuaweiMoveData\Users\YangJianPing\Desktop\Repository\Flask_pro\flaskr\blueprints" />
       <recent name="D:\HuaweiMoveData\Users\YangJianPing\Desktop\Repository\Flask_pro\flaskr" />
     </key>
   </component>
@@ -122,7 +112,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747889977389</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="提交">
+      <option name="closed" value="true" />
+      <created>1747913796721</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1747913796721</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -138,6 +136,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="变更依赖" />
-    <option name="LAST_COMMIT_MESSAGE" value="变更依赖" />
+    <MESSAGE value="提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="提交" />
   </component>
 </project>
