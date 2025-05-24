@@ -1,13 +1,12 @@
-from flask_mail import Mail
 from flask_migrate import Migrate
 from flask import Flask
 from . import config
-from .exts import db
+from .exts import db, mail
 from .blueprints.auth import bp as auth_bp
 from .blueprints.user_bp import bp as user_bp
 from .blueprints.article_bp import bp as article_bp
 from .blueprints.mail_bp import bp as mail_bp
-from .exts import mail
+
 
 app = Flask(__name__)
 # 自动绑定配置文件
