@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b504284-5fa7-4ba7-b6fb-6c79915e975d" name="Changes" comment="提交mail依赖">
-      <change afterPath="$PROJECT_DIR$/Fastapi_pro/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Fastapi_pro/main.py" afterDir="false" />
+    <list default="true" id="0b504284-5fa7-4ba7-b6fb-6c79915e975d" name="Changes" comment="提交依赖">
+      <change afterPath="$PROJECT_DIR$/Fastapi_pro/dependencies.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fastapi_pro/routers/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fastapi_pro/routers/users.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Repository.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Repository.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flask_pro/flaskr/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/Flask_pro/flaskr/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fastapi_pro/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fastapi_pro/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,9 +57,11 @@
     "Python.app (1).executor": "Run",
     "Python.app.executor": "Run",
     "Python.db.executor": "Run",
-    "Python.fastapi.executor": "Debug",
+    "Python.debug.executor": "Run",
+    "Python.fastapi.executor": "Run",
     "Python.flask.exe.executor": "Debug",
     "Python.flask.executor": "Run",
+    "Python.main.executor": "Debug",
     "Python.mypro.executor": "Run",
     "Python.start.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -73,7 +78,30 @@
       <recent name="D:\HuaweiMoveData\Users\YangJianPing\Desktop\Repository\Flask_pro\flaskr" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.fastapi">
+  <component name="RunManager" selected="Python.debug">
+    <configuration name="debug" type="PythonConfigurationType" factoryName="Python">
+      <module name="Repository" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.12 virtualenv at D:\HuaweiMoveData\Users\YangJianPing\Desktop\Repository\Fastapi_pro\.venv" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Fastapi_pro/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="fastapi" type="PythonConfigurationType" factoryName="Python">
       <module name="Repository" />
       <option name="ENV_FILES" value="" />
@@ -83,36 +111,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.12 (Repository)" />
       <option name="WORKING_DIRECTORY" value="D:\HuaweiMoveData\Users\YangJianPing\Desktop\Repository\Fastapi_pro" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/.venv/Scripts/uvicorn.exe" />
-      <option name="PARAMETERS" value="main:app --reload" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="flask" type="PythonConfigurationType" factoryName="Python">
-      <module name="Repository" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.12 (Repository)" />
-      <option name="WORKING_DIRECTORY" value="D:\HuaweiMoveData\Users\YangJianPing\Desktop\Repository\Flask_pro" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/.venv/Scripts/flask.exe" />
-      <option name="PARAMETERS" value="--app flaskr.app run" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Fastapi_pro/.venv/Scripts/fastapi.exe" />
+      <option name="PARAMETERS" value="dev main.py" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -121,8 +125,8 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.flask" />
       <item itemvalue="Python.fastapi" />
+      <item itemvalue="Python.debug" />
     </list>
   </component>
   <component name="SharedIndexes">
@@ -175,8 +179,19 @@
       <option name="project" value="LOCAL" />
       <updated>1747925603853</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="提交依赖">
+      <option name="closed" value="true" />
+      <created>1748098110807</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1748098110807</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
+  </component>
+  <component name="TerminalProjectNonSharedOptionsProvider">
+    <option name="startingDirectory" value="D:\HuaweiMoveData\Users\YangJianPing\Desktop\Repository\Fastapi_pro" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -194,6 +209,7 @@
     <MESSAGE value="提交" />
     <MESSAGE value="提交更改" />
     <MESSAGE value="提交mail依赖" />
-    <option name="LAST_COMMIT_MESSAGE" value="提交mail依赖" />
+    <MESSAGE value="提交依赖" />
+    <option name="LAST_COMMIT_MESSAGE" value="提交依赖" />
   </component>
 </project>
