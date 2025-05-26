@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b504284-5fa7-4ba7-b6fb-6c79915e975d" name="Changes" comment="5-25">
-      <change afterPath="$PROJECT_DIR$/Fastapi_pro/db.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Fastapi_pro/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Fastapi_pro/routers/auth.py" afterDir="false" />
+    <list default="true" id="0b504284-5fa7-4ba7-b6fb-6c79915e975d" name="Changes" comment="xuexi">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fastapi_pro/database.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fastapi_pro/db.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fastapi_pro/db.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Fastapi_pro/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fastapi_pro/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fastapi_pro/routers/users.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fastapi_pro/routers/users.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,7 +190,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748184330734</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="xuexi">
+      <option name="closed" value="true" />
+      <created>1748269740330</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1748269740330</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -218,6 +222,7 @@
     <MESSAGE value="提交mail依赖" />
     <MESSAGE value="提交依赖" />
     <MESSAGE value="5-25" />
-    <option name="LAST_COMMIT_MESSAGE" value="5-25" />
+    <MESSAGE value="xuexi" />
+    <option name="LAST_COMMIT_MESSAGE" value="xuexi" />
   </component>
 </project>
