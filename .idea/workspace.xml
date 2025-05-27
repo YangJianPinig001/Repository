@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b504284-5fa7-4ba7-b6fb-6c79915e975d" name="Changes" comment="xuexi">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="0b504284-5fa7-4ba7-b6fb-6c79915e975d" name="Changes" comment="学习">
+      <change beforePath="$PROJECT_DIR$/.idea/Repository.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Repository.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fastapi_pro/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/Fastapi_pro/database.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fastapi_pro/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fastapi_pro/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fastapi_pro/routers/users.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fastapi_pro/routers/users.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +34,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/YangJianPinig001/Repository.git&quot;,
+    &quot;url&quot;: &quot;git@github.com:YangJianPinig001/Repository.git&quot;,
     &quot;accountId&quot;: &quot;24bba550-066c-46d6-b425-542ec084bdc1&quot;
   }
 }</component>
@@ -62,7 +65,7 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;
   }
 }</component>
   <component name="RecentsManager">
