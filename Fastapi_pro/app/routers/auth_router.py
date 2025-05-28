@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException
 from sqlmodel import Session, select
-from Fastapi_pro.models import Hero
-from Fastapi_pro.db import engine
+from app.models import Hero
+from app.db import engine
 
 router = APIRouter()
 

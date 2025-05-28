@@ -4,17 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b504284-5fa7-4ba7-b6fb-6c79915e975d" name="Changes" comment="5-27">
-      <change afterPath="$PROJECT_DIR$/Fastapi_pro/routers/team.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Fastapi_pro/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Fastapi_pro/tests/test_main.py" afterDir="false" />
+    <list default="true" id="0b504284-5fa7-4ba7-b6fb-6c79915e975d" name="Changes" comment="更新版本">
+      <change afterPath="$PROJECT_DIR$/Fastapi_pro/app/routers/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fastapi_pro/app/schemas.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fastapi_pro/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fastapi_pro/app/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fastapi_pro/alembic/env.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fastapi_pro/alembic/env.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Fastapi_pro/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/Fastapi_pro/database.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fastapi_pro/db.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fastapi_pro/db.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fastapi_pro/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fastapi_pro/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fastapi_pro/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fastapi_pro/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fastapi_pro/routers/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fastapi_pro/routers/auth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fastapi_pro/routers/users.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fastapi_pro/routers/users.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fastapi_pro/db.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fastapi_pro/app/db.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fastapi_pro/dependencies.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fastapi_pro/app/crud.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fastapi_pro/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fastapi_pro/app/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fastapi_pro/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fastapi_pro/app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fastapi_pro/routers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fastapi_pro/app/dependencies.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fastapi_pro/routers/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fastapi_pro/app/routers/auth_router.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fastapi_pro/routers/team.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fastapi_pro/app/routers/team_router.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fastapi_pro/routers/users.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fastapi_pro/app/routers/user_router.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fastapi_pro/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fastapi_pro/tests/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fastapi_pro/tests/test_users.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fastapi_pro/tests/test_users.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,10 +61,16 @@
   "keyToString": {
     "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python tests.Python tests for test_main.test_create_hero.executor": "Debug",
+    "Python tests.Python tests for test_main.test_create_hero.executor": "Run",
     "Python tests.Python tests for test_main.test_create_hero_incomplete.executor": "Run",
     "Python tests.Python tests for test_main.test_create_hero_invalid.executor": "Run",
     "Python tests.Python tests for test_main.test_read_heroes.executor": "Run",
+    "Python tests.Python tests for test_users.test_create_hero.executor": "Run",
+    "Python tests.Python tests for test_users.test_create_hero_incomplete.executor": "Run",
+    "Python tests.Python tests for test_users.test_delete_hero.executor": "Run",
+    "Python tests.Python tests for test_users.test_read_hero.executor": "Run",
+    "Python tests.Python tests for test_users.test_read_heroes.executor": "Run",
+    "Python tests.Python tests for test_users.test_update_hero.executor": "Run",
     "Python.Unnamed.executor": "Run",
     "Python.app (1).executor": "Run",
     "Python.app.executor": "Run",
@@ -75,7 +87,7 @@
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "D:/HuaweiMoveData/Users/YangJianPing/Desktop/Repository/Fastapi_pro/routers",
-    "settings.editor.selected.configurable": "vcs.Git"
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -83,12 +95,14 @@
       <recent name="D:\HuaweiMoveData\Users\YangJianPing\Desktop\Repository\Fastapi_pro\routers" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\HuaweiMoveData\Users\YangJianPing\Desktop\Repository\Fastapi_pro\app" />
+      <recent name="D:\HuaweiMoveData\Users\YangJianPing\Desktop\Repository\Fastapi_pro\tests" />
       <recent name="D:\HuaweiMoveData\Users\YangJianPing\Desktop\Repository\Flask_pro" />
       <recent name="D:\HuaweiMoveData\Users\YangJianPing\Desktop\Repository\Flask_pro\flaskr\blueprints" />
       <recent name="D:\HuaweiMoveData\Users\YangJianPing\Desktop\Repository\Flask_pro\flaskr" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_main.test_read_heroes">
+  <component name="RunManager" selected="Python.fastapi">
     <configuration name="debug" type="PythonConfigurationType" factoryName="Python">
       <module name="Repository" />
       <option name="ENV_FILES" value="" />
@@ -98,11 +112,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.12 virtualenv at D:\HuaweiMoveData\Users\YangJianPing\Desktop\Repository\Fastapi_pro\.venv" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Fastapi_pro/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Fastapi_pro/app/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -124,8 +139,8 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Fastapi_pro/.venv/Scripts/fastapi.exe" />
-      <option name="PARAMETERS" value="dev main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Fastapi_pro/.venv/Scripts/uvicorn.exe" />
+      <option name="PARAMETERS" value="app.main:app --reload --host 0.0.0.0 --port 8000" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -133,7 +148,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_main.test_create_hero" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for tests.test_user.test_create_hero_incomplete" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Repository" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -144,11 +159,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_main.test_create_hero&quot;" />
+      <option name="_new_target" value="&quot;tests.test_user.test_create_hero_incomplete&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_main.test_create_hero_incomplete" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for tests.test_user.test_delete_hero" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Repository" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -159,11 +174,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_main.test_create_hero_incomplete&quot;" />
+      <option name="_new_target" value="&quot;tests.test_user.test_delete_hero&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_main.test_create_hero_invalid" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for tests.test_user.test_read_hero" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Repository" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -174,11 +189,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_main.test_create_hero_invalid&quot;" />
+      <option name="_new_target" value="&quot;tests.test_user.test_read_hero&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_main.test_read_heroes" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for tests.test_user.test_read_heroes" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Repository" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -189,24 +204,41 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_main.test_read_heroes&quot;" />
+      <option name="_new_target" value="&quot;tests.test_user.test_read_heroes&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for tests.test_user.test_update_hero" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Repository" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Fastapi_pro/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.test_user.test_update_hero&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Python.debug" />
       <item itemvalue="Python.fastapi" />
-      <item itemvalue="Python tests.Python tests for test_main.test_create_hero" />
-      <item itemvalue="Python tests.Python tests for test_main.test_create_hero_incomplete" />
-      <item itemvalue="Python tests.Python tests for test_main.test_create_hero_invalid" />
-      <item itemvalue="Python tests.Python tests for test_main.test_read_heroes" />
+      <item itemvalue="Python tests.Python tests for tests.test_user.test_create_hero_incomplete" />
+      <item itemvalue="Python tests.Python tests for tests.test_user.test_delete_hero" />
+      <item itemvalue="Python tests.Python tests for tests.test_user.test_read_hero" />
+      <item itemvalue="Python tests.Python tests for tests.test_user.test_read_heroes" />
+      <item itemvalue="Python tests.Python tests for tests.test_user.test_update_hero" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for test_main.test_read_heroes" />
-        <item itemvalue="Python tests.Python tests for test_main.test_create_hero_invalid" />
-        <item itemvalue="Python tests.Python tests for test_main.test_create_hero" />
-        <item itemvalue="Python tests.Python tests for test_main.test_create_hero_incomplete" />
+        <item itemvalue="Python tests.Python tests for tests.test_user.test_create_hero_incomplete" />
+        <item itemvalue="Python tests.Python tests for tests.test_user.test_read_heroes" />
+        <item itemvalue="Python tests.Python tests for tests.test_user.test_read_hero" />
+        <item itemvalue="Python tests.Python tests for tests.test_user.test_update_hero" />
+        <item itemvalue="Python tests.Python tests for tests.test_user.test_delete_hero" />
       </list>
     </recent_temporary>
   </component>
@@ -300,7 +332,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748357413307</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="更新版本">
+      <option name="closed" value="true" />
+      <created>1748434726190</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1748434726190</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -326,32 +366,7 @@
     <MESSAGE value="5-25" />
     <MESSAGE value="xuexi" />
     <MESSAGE value="5-27" />
-    <option name="LAST_COMMIT_MESSAGE" value="5-27" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Fastapi_pro/tests/test_main.py</url>
-          <line>31</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Fastapi_pro/tests/test_main.py</url>
-          <line>10</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Fastapi_pro/tests/test_main.py</url>
-          <line>23</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Fastapi_pro/tests/test_main.py</url>
-          <line>30</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="更新版本" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新版本" />
   </component>
 </project>

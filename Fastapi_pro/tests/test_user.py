@@ -1,6 +1,6 @@
-from Fastapi_pro.models import Hero
 from starlette.testclient import TestClient
 from sqlmodel import Session
+from app.models import Hero
 
 
 def test_create_hero(client: TestClient):
@@ -58,3 +58,47 @@ def test_read_heroes(session: Session, client: TestClient):
     assert data[1]["secret_name"] == hero_2.secret_name
     assert data[1]["age"] == hero_2.age
     assert data[1]["id"] == hero_2.id
+
+
+def test_read_hero(session: Session, client: TestClient):
+    hero_1 = Hero(name="Deadpond", secret_name="Dive Wilson")
+    session.add(hero_1)
+    session.commit()
+
+    response = client.get(f"/heroes/{hero_1.id}")
+    data = response.json()
+
+    assert response.status_code == 200
+    assert data["name"] == hero_1.name
+    assert data["secret_name"] == hero_1.secret_name
+    assert data["age"] == hero_1.age
+    assert data["id"] == hero_1.id
+
+
+def test_update_hero(session: Session, client: TestClient):
+    hero_1 = Hero(name="Deadpond", secret_name="Dive Wilson")
+    session.add(hero_1)
+    session.commit()
+
+    response = client.patch(f"/heroes/{hero_1.id}", json={"name": "Deadpuddle"})
+    data = response.json()
+
+    assert response.status_code == 200
+    assert data["name"] == "Deadpuddle"
+    assert data["secret_name"] == "Dive Wilson"
+    assert data["age"] is None
+    assert data["id"] == hero_1.id
+
+
+def test_delete_hero(session: Session, client: TestClient):
+    hero_1 = Hero(name="Deadpond", secret_name="Dive Wilson")
+    session.add(hero_1)
+    session.commit()
+
+    response = client.delete(f"/heroes/{hero_1.id}")
+
+    hero_in_db = session.get(Hero, hero_1.id)
+
+    assert response.status_code == 200
+
+    assert hero_in_db is None

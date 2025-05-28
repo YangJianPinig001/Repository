@@ -1,8 +1,8 @@
 import pytest
 from sqlmodel import create_engine, Session, SQLModel, StaticPool
 from starlette.testclient import TestClient
-from Fastapi_pro.main import app
-from Fastapi_pro.db import get_session
+from app.main import app
+from app.dependencies import get_session
 
 @pytest.fixture(name="session")
 def session_fixture():

@@ -1,7 +1,8 @@
 from fastapi import APIRouter, Depends, Query, HTTPException
-from Fastapi_pro.models import Team, TeamPublic, TeamCreate, TeamUpdate, TeamPublicWithHeroes
+from app.models import Team
+from app.schemas import TeamPublic, TeamCreate, TeamUpdate, TeamPublicWithHeroes
 from sqlmodel import Session, select
-from Fastapi_pro.db import get_session
+from app.dependencies import get_session
 
 router = APIRouter()
 

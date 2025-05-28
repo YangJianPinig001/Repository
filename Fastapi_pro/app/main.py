@@ -1,13 +1,12 @@
 import uvicorn
 from fastapi import FastAPI
-from Fastapi_pro.db import create_db_and_tables
-from Fastapi_pro.routers import users, auth, team
-
+from app.db import create_db_and_tables
+from app.routers import user_router, team_router, auth_router
 
 app = FastAPI()
-app.include_router(users.router)
-app.include_router(auth.router)
-app.include_router(team.router)
+app.include_router(user_router.router)
+app.include_router(team_router.router)
+app.include_router(auth_router.router)
 
 
 @app.get("/createDatabase", tags=["database"])
