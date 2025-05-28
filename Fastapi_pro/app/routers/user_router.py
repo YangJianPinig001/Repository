@@ -15,7 +15,7 @@ def hash_password(password):
     return password
 
 
-@router.post("/users/", response_model=UserPublic, tags=["users"])
+@router.post("/users/", response_model=UserPublic)
 async def create_user(*, session: Session = Depends(get_session), user: UserCreate):
     exist_user = session.exec(select(User).where(User.email == user.email)).first()
     if exist_user:

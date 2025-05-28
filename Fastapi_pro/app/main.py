@@ -6,7 +6,7 @@ from app.db import create_db_and_tables
 from app.routers import user_router, team_router, auth_router
 
 app = FastAPI()
-app.include_router(user_router.router)
+app.include_router(user_router.router, tags=["user"])
 app.include_router(team_router.router)
 app.include_router(auth_router.router)
 
