@@ -1,27 +1,28 @@
-from fastapi import APIRouter
-from Fastapi_pro.models import Hero, Team
+from typing import List
+
+from fastapi import APIRouter, Depends
+from Fastapi_pro.models import Hero, HeroCreate, HeroPublic, Team
 from sqlmodel import Session, select
-from Fastapi_pro.db import engine
+from Fastapi_pro.db import engine, get_session
+
 
 router = APIRouter()
 
 
-@router.get("/test/me")
-async def create_heroes():
-    with Session(engine) as session:
-        statement = select(Hero).where(Hero.name == "Deadpond")
-        h = session.exec(statement).first()
-        t = h.team
-    return t
+@router.post("/heroes/", response_model=HeroPublic, tags=["users"])
+async def create_heroes(*, session: Session = Depends(get_session), hero: HeroCreate):
+    db_hero = Hero.model_validate(hero)
+    session.add(db_hero)
+    session.commit()
+    session.refresh(db_hero)
+    return db_hero
 
-@router.get("/test/query", tags=["users"])
-async def create_heroes():
-    with Session(engine) as session:
-        statement = select(Hero).join(Team, isouter=True).where(Team.name == "Preventers")
-        results = session.exec(statement)
-        for hero in results:
-            print("Hero:", hero)
-    return "successfully created heroes"
+
+@router.get("/heroes/", tags=["users"], response_model=List[HeroPublic])
+async def create_heroes(*, session: Session = Depends(get_session)):
+    statement = select(Hero)
+    heroes = session.exec(statement).all()
+    return heroes
 
 @router.get("/update/me")
 async def update_heroes():
