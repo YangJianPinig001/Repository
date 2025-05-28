@@ -6,7 +6,6 @@ from app.schemas import HeroPublic, HeroCreate, UserCreate, UserPublic
 from sqlmodel import Session, select
 from app.db import engine
 from app.dependencies import get_session
-from app import crud
 
 router = APIRouter()
 

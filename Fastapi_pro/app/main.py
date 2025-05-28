@@ -1,5 +1,7 @@
 import uvicorn
 from fastapi import FastAPI
+from starlette.middleware.cors import CORSMiddleware
+
 from app.db import create_db_and_tables
 from app.routers import user_router, team_router, auth_router
 
@@ -7,6 +9,14 @@ app = FastAPI()
 app.include_router(user_router.router)
 app.include_router(team_router.router)
 app.include_router(auth_router.router)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 @app.get("/createDatabase", tags=["database"])
