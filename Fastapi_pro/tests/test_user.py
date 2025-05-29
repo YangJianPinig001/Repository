@@ -10,7 +10,6 @@ def test_create_hero(client: TestClient):
             "name": "Test Hero",
             "secret_name": "Test Secret",
         })
-    # 清除依赖覆盖
     data = response.json()
     assert response.status_code == 200
     assert data["name"] == "Test Hero"

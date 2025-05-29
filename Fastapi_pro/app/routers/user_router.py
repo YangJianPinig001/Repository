@@ -5,9 +5,14 @@ from app.models import Hero,Team, User
 from app.schemas import HeroPublic, HeroCreate, UserCreate, UserPublic
 from sqlmodel import Session, select
 from app.db import engine
-from app.dependencies import get_session
+from app.dependencies import get_session, SessionDep
 
-router = APIRouter()
+router = APIRouter(
+    prefix="/user",
+    tags=["user"],
+    # dependencies=[Depends(get_token_header)],
+    responses={404: {"description": "Not found"}},
+)
 
 
 def hash_password(password):
@@ -16,17 +21,15 @@ def hash_password(password):
 
 
 @router.post("/users/", response_model=UserPublic)
-async def create_user(*, session: Session = Depends(get_session), user: UserCreate):
+async def create_user(*, session: SessionDep, user: UserCreate):
     exist_user = session.exec(select(User).where(User.email == user.email)).first()
     if exist_user:
         raise HTTPException(status_code=400, detail="邮件账号已存在")
-    db_user = User(
-        username=user.username,
-        email=user.email,
-        full_name=user.full_name,
-        disabled=user.disabled,
-        hashed_password=hash_password(user.password)
-    )
+    # hero_data = hero.model_dump(exclude_unset=True)
+    # hero_db.sqlmodel_update(hero_data)
+    user_dict = user.model_dump()
+    user_dict["hashed_password"] = hash_password(user.password)
+    db_user = User(**user_dict)
     session.add(user)
     return db_user
 
