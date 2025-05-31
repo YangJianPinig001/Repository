@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b504284-5fa7-4ba7-b6fb-6c79915e975d" name="Changes" comment="配置路由标签">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fastapi_pro/app/dependencies.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fastapi_pro/app/dependencies.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fastapi_pro/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fastapi_pro/app/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fastapi_pro/app/routers/user_router.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fastapi_pro/app/routers/user_router.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fastapi_pro/tests/test_user.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fastapi_pro/tests/test_user.py" afterDir="false" />
-    </list>
+    <list default="true" id="0b504284-5fa7-4ba7-b6fb-6c79915e975d" name="Changes" comment="提升" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -353,7 +347,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748443702272</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="提升">
+      <option name="closed" value="true" />
+      <created>1748530483705</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1748530483705</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -383,6 +385,7 @@
     <MESSAGE value="项目结构大调整" />
     <MESSAGE value="配置跨域" />
     <MESSAGE value="配置路由标签" />
-    <option name="LAST_COMMIT_MESSAGE" value="配置路由标签" />
+    <MESSAGE value="提升" />
+    <option name="LAST_COMMIT_MESSAGE" value="提升" />
   </component>
 </project>
